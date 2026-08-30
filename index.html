@@ -79,21 +79,125 @@
       <h2 class="sec-title">技术<span class="hl">栈</span></h2>
       <div class="sec-line"></div>
     </div>
-    <div class="skills-wrap">
-      <div class="skills-col">
-        <h4>— 核心技术</h4>
-        <div class="skill-item"><div class="skill-label"><span>Vue.js / React</span><span class="pct">92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>JavaScript / TypeScript</span><span class="pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>ECharts / 数据可视化</span><span class="pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>HTML5 / CSS3 / 响应式</span><span class="pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div></div>
+
+    <!-- Circular progress rings -->
+    <div class="skills-rings">
+      <div class="ring-card" data-ring="95">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" class="ring-bg"/>
+          <circle cx="60" cy="60" r="52" class="ring-fg" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+        </svg>
+        <div class="ring-value">95<span class="unit">%</span></div>
+        <div class="ring-name">HTML5 / CSS3</div>
+        <div class="ring-desc">响应式 · Flex · Grid · 动画</div>
       </div>
-      <div class="skills-col">
-        <h4>— 框架 & 工具</h4>
-        <div class="skill-item"><div class="skill-label"><span>Vant / Element / Layui</span><span class="pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>钉钉微应用 / H5</span><span class="pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>BI 大屏 / 拖拽系统</span><span class="pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div></div>
-        <div class="skill-item"><div class="skill-label"><span>Git / 组件库封装</span><span class="pct">86%</span></div><div class="skill-bar"><div class="skill-fill" data-w="86"></div></div></div>
+      <div class="ring-card" data-ring="92">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" class="ring-bg"/>
+          <circle cx="60" cy="60" r="52" class="ring-fg ring-fg-2" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+        </svg>
+        <div class="ring-value">92<span class="unit">%</span></div>
+        <div class="ring-name">Vue / React</div>
+        <div class="ring-desc">组件化 · 状态管理 · Hooks</div>
       </div>
+      <div class="ring-card" data-ring="90">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" class="ring-bg"/>
+          <circle cx="60" cy="60" r="52" class="ring-fg ring-fg-3" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+        </svg>
+        <div class="ring-value">90<span class="unit">%</span></div>
+        <div class="ring-name">JavaScript / TS</div>
+        <div class="ring-desc">ES6+ · 类型系统 · 异步编程</div>
+      </div>
+      <div class="ring-card" data-ring="88">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" class="ring-bg"/>
+          <circle cx="60" cy="60" r="52" class="ring-fg ring-fg-4" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+        </svg>
+        <div class="ring-value">88<span class="unit">%</span></div>
+        <div class="ring-name">ECharts / 可视化</div>
+        <div class="ring-desc">大屏 · BI · Canvas · SVG</div>
+      </div>
+    </div>
+
+    <!-- Skill categories -->
+    <div class="skills-cats">
+      <div class="skill-cat">
+        <div class="skill-cat-head">
+          <span class="cat-ico">⚛</span>
+          <h4>框架 & UI 库</h4>
+        </div>
+        <div class="skill-cat-body">
+          <div class="pill-group">
+            <span class="pill lvl-master">Vue.js</span>
+            <span class="pill lvl-master">React</span>
+            <span class="pill lvl-proficient">Vant</span>
+            <span class="pill lvl-proficient">Element UI</span>
+            <span class="pill lvl-proficient">Layui</span>
+            <span class="pill lvl-proficient">Ant Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head">
+          <span class="cat-ico">🛠</span>
+          <h4>工程化 & 工具</h4>
+        </div>
+        <div class="skill-cat-body">
+          <div class="pill-group">
+            <span class="pill lvl-proficient">Git</span>
+            <span class="pill lvl-proficient">Webpack</span>
+            <span class="pill lvl-proficient">Vite</span>
+            <span class="pill lvl-fam">npm / yarn</span>
+            <span class="pill lvl-fam">Sass / Less</span>
+            <span class="pill lvl-fam">PostCSS</span>
+            <span class="pill lvl-fam">ESLint</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head">
+          <span class="cat-ico">🎯</span>
+          <h4>业务领域</h4>
+        </div>
+        <div class="skill-cat-body">
+          <div class="pill-group">
+            <span class="pill lvl-master">BI 数据大屏</span>
+            <span class="pill lvl-proficient">低代码 · 拖拽表单</span>
+            <span class="pill lvl-proficient">H5 · 钉钉微应用</span>
+            <span class="pill lvl-proficient">企业后台管理</span>
+            <span class="pill lvl-fam">政务系统</span>
+            <span class="pill lvl-fam">移动端适配</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head">
+          <span class="cat-ico">💡</span>
+          <h4>能力标签</h4>
+        </div>
+        <div class="skill-cat-body">
+          <div class="pill-group">
+            <span class="pill lvl-star">组件库封装</span>
+            <span class="pill lvl-star">代码审查</span>
+            <span class="pill lvl-star">团队协作</span>
+            <span class="pill lvl-star">带教实习生</span>
+            <span class="pill lvl-star">需求沟通</span>
+            <span class="pill lvl-star">性能优化</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="skills-legend">
+      <span><i class="dot-lvl lvl-master"></i>精通</span>
+      <span><i class="dot-lvl lvl-proficient"></i>熟练</span>
+      <span><i class="dot-lvl lvl-fam"></i>熟悉</span>
+      <span><i class="dot-lvl lvl-star"></i>综合能力</span>
     </div>
   </section>
 

@@ -1,4 +1,4 @@
-﻿/* ===== Canvas Particle Background ===== */
+/* ===== Canvas Particle Background ===== */
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let particles = [];
@@ -122,9 +122,21 @@ const blockObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('reveal');
-      // Animate skill bars
-      e.target.querySelectorAll('.skill-fill').forEach(b => {
-        b.style.width = b.dataset.w + '%';
+      // Animate skill rings
+      e.target.querySelectorAll('.ring-card').forEach(card => {
+        const pct = parseInt(card.dataset.ring);
+        const ring = card.querySelector('.ring-fg');
+        const circ = 2 * Math.PI * 52; // 326.7
+        ring.style.strokeDashoffset = circ * (1 - pct / 100);
+        // Animate the number
+        const valEl = card.querySelector('.ring-value');
+        let cur = 0;
+        const step = pct / 60;
+        const timer = setInterval(() => {
+          cur += step;
+          if (cur >= pct) { cur = pct; clearInterval(timer); }
+          valEl.childNodes[0].nodeValue = Math.floor(cur);
+        }, 25);
       });
     }
   });
