@@ -1,4 +1,4 @@
-﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg-0: #05070d;
@@ -245,7 +245,7 @@ body {
 /* Quick stats */
 .stats-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 .stat {
@@ -371,6 +371,9 @@ section.block.reveal { opacity: 1; transform: translateY(0); }
   text-align: center;
   backdrop-filter: blur(12px);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: all 0.4s;
 }
 .ring-card:hover {
@@ -399,16 +402,19 @@ section.block.reveal { opacity: 1; transform: translateY(0); }
 .ring-fg-2 { stroke: #00e0ff; filter: drop-shadow(0 0 6px rgba(0, 224, 255, 0.5)); }
 .ring-fg-3 { stroke: #7c3aed; filter: drop-shadow(0 0 6px rgba(124, 58, 237, 0.5)); }
 .ring-fg-4 { stroke: #ff6b6b; filter: drop-shadow(0 0 6px rgba(255, 107, 107, 0.5)); }
+.ring-fg-5 { stroke: #f59e0b; filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.5)); }
 .ring-value {
   position: absolute;
-  top: 52px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 28px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.9rem;
   font-weight: 700;
   color: var(--text-1);
-  line-height: 1;
 }
 .ring-value .unit {
   font-size: 0.9rem;
@@ -875,7 +881,7 @@ section.block.reveal { opacity: 1; transform: translateY(0); }
   .hero { padding: 80px 0 60px; min-height: auto; }
   section.block { padding: 60px 0; }
   .edu-card { flex-direction: column; align-items: flex-start; }
-  .skills-rings { grid-template-columns: repeat(2, 1fr); }
+  .skills-rings { grid-template-columns: repeat(3, 1fr); }
   .skills-cats { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
